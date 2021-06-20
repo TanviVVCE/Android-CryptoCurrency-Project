@@ -7,32 +7,25 @@
     tools:context=".MainActivity">
 
     <ToggleButton
-        android:id="@+id/toggleButton"
+        android:id="@+id/InputButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
+        android:backgroundTint="#FF0000"
         android:text="ToggleButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <ToggleButton
-        android:id="@+id/toggleButton2"
+        android:id="@+id/InputButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#FF0000"
         android:text="ToggleButton"
-        app:layout_constraintStart_toStartOf="@+id/toggleButton"
-        app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="match_parent"
-        android:layout_height="16dp"
-        android:layout_marginTop="48dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@+id/button5"
-        tools:layout_editor_absoluteX="152dp" />
+        app:layout_constraintStart_toStartOf="@+id/InputButton1"
+        app:layout_constraintTop_toBottomOf="@+id/InputButton1" />
 
     <Button
         android:id="@+id/button"
@@ -115,9 +108,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/toggleButton2"
-        app:layout_constraintStart_toEndOf="@+id/toggleButton2"
-        app:layout_constraintTop_toTopOf="@+id/toggleButton"
+        app:layout_constraintBottom_toBottomOf="@+id/InputButton2"
+        app:layout_constraintStart_toEndOf="@+id/InputButton2"
+        app:layout_constraintTop_toTopOf="@+id/InputButton1"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <Button
@@ -125,41 +118,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:backgroundTint="#FF0000"
         android:text="OFF"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton"
         app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toTopOf="@+id/imageButton" />
 
     <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginTop="48dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        tools:layout_editor_absoluteX="152dp" />
+
+    <View
         android:id="@+id/divider2"
         android:layout_width="0dp"
         android:layout_height="3dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="@+id/toggleButton"
+        app:layout_constraintBottom_toBottomOf="@+id/InputButton1"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
-        app:layout_constraintStart_toEndOf="@+id/toggleButton"
-        app:layout_constraintTop_toTopOf="@+id/toggleButton" />
+        app:layout_constraintStart_toEndOf="@+id/InputButton1"
+        app:layout_constraintTop_toTopOf="@+id/InputButton1" />
 
     <View
         android:id="@+id/divider3"
         android:layout_width="0dp"
         android:layout_height="3dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="@+id/toggleButton2"
+        app:layout_constraintBottom_toBottomOf="@+id/InputButton2"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
-        app:layout_constraintStart_toEndOf="@+id/toggleButton2"
-        app:layout_constraintTop_toTopOf="@+id/toggleButton2" />
+        app:layout_constraintStart_toEndOf="@+id/InputButton2"
+        app:layout_constraintTop_toTopOf="@+id/InputButton2" />
 
     <View
         android:id="@+id/divider4"
         android:layout_width="0dp"
-        android:layout_height="3dp"
+        android:layout_height="1dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toBottomOf="@+id/button8"
         app:layout_constraintEnd_toStartOf="@+id/button8"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="@+id/button8"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/button8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
